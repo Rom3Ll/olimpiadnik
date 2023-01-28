@@ -7,34 +7,188 @@
     <title>Olimpiadnik</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/main/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <section class="header">
 
-            <div class="header_wrapper wraps">
+            <div class="header_wrapper ">
                 <div class="header_logo">
-                    <img src="img/main/logo.svg" alt="logo picture" style="max-width: 140px;">
+                    <a href="#"><img src="img/main/logo.svg" alt="logo picture" style="max-width: 140px;"></a>
                 </div>
                 <div class="header_nav">
                     <ul>
-                        <li class="nav_elem">Главная</li>
-                        <li class="nav_elem">Школьникам</li>
-                        <li class="nav_elem">Преподавателям</li>
-                        <li class="nav_elem">Студентам</li>
-                        <li class="nav_elem">Партнерам</li>
+                        <li class="nav_elem"><a href="#">Главная</a></li>
+                        <li class="nav_elem"><a href="#">Школьникам</a></li>
+                        <li class="nav_elem"><a href="#">Преподавателям</a></li>
+                        <li class="nav_elem"><a href="#">Студентам</a></li>
+                        <li class="nav_elem"><a href="#">Партнерам</a></li>
                     </ul>
                 </div>
                 <div class="header_login">
+                    <div class="header_map">
+                        <a href="https://yandex.ru/maps/-/CCUzmOwTKD" target="_blank">Москва</a>
+                        <img src="img/main/map.svg" alt="map_icon" class="map_img">
+                    </div>
+                    <div class="header_btns">
+                        <button class="login">Вход</button>
+                        <button class="reg">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
+    <main>
+        <section class="main_header_wrapper">
+            <div class="wrapper">
+                <div class="main_wrapper wraps">
+                    <div class="main_header">
+                        <div class="block_wrapper">
+                            <img src="img/main/blue_block.svg" class="main_block_img" style="width: 100px; height: 25px">
+                            <span class="main_header_text">Олимпиады недели</span>
+                        </div>
+                    </div>
+                    <div class="slider_container">
+                        <div class="slider">
+                            <div class="slider_item">
+                                <a href="#" target="_blank"><img src="img/main/russian_bear.svg" alt="slider_pic"></a>
+                            </div>
+                            <div class="slider_item">
+                                <a href="#" target="_blank"><img src="img/main/russian_bear.svg" alt="slider_pic"></a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+          
+            <div class="search_big_wrapper">
+                <div class="search_wrapper wraps">
+                    <div class="search_img">
+                        <div class="search_img_wrapper">
+                            <a href="#">
+                                <img src="img/main/logo.svg" alt="">
+                            </a>
+                            <div class="search">
+                                <input type="search" name="" id="" placeholder="Поиск">
+                                <button>Найти</button>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mearest_common_wrapper">
+
+                <div class="nearest_wrapper wraps">
+                    <div class="nearest_header">
+                        <div class="block_wrapper">
+                            <img src="img/main/blue_block.svg" class="main_block_img" style="width: 100px; height: 25px">
+                            <span class="main_header_text">Ближайшие олимпиады</span>
+                        </div>
+                    </div>
+            
+                    <div class="nearest_container">
+                        <div class="container_items">
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/nearest/mifi.svg" alt="item_pic"></a>
+                                <div>Всероссийский конкурс научных работ школьников «Юниор»</div>
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/nearest/mgya.svg" alt="item_pic"></a>
+                                <div>Кутафинская олимпиада школьников по праву</div>
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/nearest/belchonok.svg" alt="item_pic"></a>
+                                <div>Университетская олимпиада школьников «Бельчонок»</div>
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/nearest/gazprom.svg" alt="item_pic"></a>
+                                <div>Отраслевая олимпиада школьников «Газпром»</div>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div> 
+            
+            <div class="about_us_common_wrapper">
+                <div class="about_us_wrapper wraps">
+                    <div class="about_us_header">
+                        <div class="block_wrapper">
+                            <img src="img/main/blue_block.svg" class="main_block_img" style="width: 58px; height: 35px">
+                            <span class="main_header_text">О нас</span>
+                        </div>
+                    </div>
+                    <div class="about_text">
+                        <span>
+                            Главной целью работы нашей команды является повысить качество проведения и организации олимпиад для школьников и студентов.Здесь можно будет узнавать о проведении различных олимпиад, записываться на них, узнавать подробности о дате и месте проведения, об организациях. Можно будет вести учет своих достижений в личном кабинете.
+                        </span>
+                    </div>
                 </div>
             </div>
 
+            <div class="partners_common_wrapper">
+                <div class="partners_warapper wraps">
+                    <div class="partners_header">
+                        <div class="block_wrapper">
+                            <img src="img/main/blue_block.svg" class="main_block_img" style="width: 58px; height: 35px">
+                            <span class="main_header_text">Наши партнеры</span>
+                        </div>
+                    </div>
 
+                    <div class="nearest_container">
+                        <div class="container_items">
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/partners/mgou.svg" alt="item_pic"></a>                                
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/partners/minObr.svg" alt="item_pic"></a>
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/partners/kfu.svg" alt="item_pic"></a>                            
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/partners/mgou.svg" alt="item_pic"></a>                                
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/partners/minObr.svg" alt="item_pic"></a>
+                            </div>
+                            <div class="container_item">
+                                <a href="#" target="_blank"><img src="img/partners/kfu.svg" alt="item_pic"></a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-    </header>
-    <main></main>
-    <footer></footer>
+
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="footer_wrapper ">
+                <div class="footer_logo">
+                    <a href="#"><img src="img/main/footer_logo.svg" alt="logo picture" style="max-width: 140px;"></a>
+                </div>
+                <div class="footer_nav">
+                    <ul>
+                        <li class="nav_elem"><a href="#">Учебным заведениям</a></li>
+                        <li class="nav_elem"><a href="#">Правовая информация</a></li>
+                        <li class="nav_elem"><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- slider -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
