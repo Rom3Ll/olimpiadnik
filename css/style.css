@@ -97,6 +97,11 @@ body{
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  transition: 1.1s all;
+}
+
+.nav_elem:hover{
+  scale: 1.1;
 }
 
 .nav_elem a{
@@ -172,6 +177,7 @@ body{
   font-weight: 700;
   font-size: 22px;
   line-height: 35px;
+  
 }
 
 .main_header_text{
@@ -182,7 +188,6 @@ body{
 /*main_end*/
 
 /* Слайдер */
-.slick-slider {}
 
 /* Ограничивающая оболочка */
 .slick-list {
@@ -371,6 +376,11 @@ body{
   display: flex;
 }
 
+.footer_nav .nav_elem:hover{
+  opacity: .7;
+  scale: 1;
+}
+
 .footer_nav ul{
   display: flex;
   align-items: center;
@@ -383,4 +393,238 @@ body{
 
 .footer_nav li a{
   color: #fff;
+}
+
+/* popup sign in */
+
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+
+
+
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all; 
+  transition: 0.5s all;
+  z-index: 100;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); 
+  width: 800px;
+  padding: 25px;
+  transition: 0.5s all;
+  background-color: #fff;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1); 
+  transition: 0.5s all;
+}
+
+.img_wrapper{
+  text-align: right; 
+  margin-bottom: 50px; 
+}
+
+.popup_header_wrapper{
+  margin-bottom: 50px;
+}
+
+.popup-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-email,
+.popup-pass{
+  width: 600px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #333333;
+  margin-bottom: 35px;
+}
+
+.popup-signin-btn{
+  width: 200px;
+  height: 50px;
+  background-color: #333333;
+  color: #fff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border: 0;
+  border-radius: 15px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+.close-signin-popup{
+  cursor: pointer;
+}
+
+/* popup signup */
+
+.popup_signup_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+
+.popup_signup_bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+  z-index: 10;
+}
+
+.popup_signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 1000px;
+  padding: 25px;
+  transition: 0.5s all;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.popup_signup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.close-signup-popup{
+  cursor: pointer;
+}
+
+.name_block ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.name_list_elem input{
+  width: 250px;
+  height: 35px;
+  border: 1px solid rgba(51, 51, 51, 0.6);
+  border-radius: 15px;
+  padding: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.name_list_elem input::placeholder{
+  opacity: .7;
+}
+
+.name_list_elem:nth-child(even){
+  margin: 0 10px;
+}
+
+.contact_block{
+  margin-top: 20px;
+}
+
+.contact_list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact_list_elem input{
+  width: 400px;
+  height: 40px;
+  border: 1px solid rgba(51, 51, 51, 0.6);
+  border-radius: 15px;
+  padding: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.contact_list_elem input::placeholder{
+  opacity: .7;
+}
+
+
+.pass_block {
+  margin-top: 20px;
+}
+
+.pass_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pass_list_elem input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid rgba(51, 51, 51, 0.6);
+  border-radius: 15px;
+  padding: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pass_list_elem input::placeholder{
+  opacity: .7;
+}
+
+.private_policy_block{
+  display: flex;
+  margin: 25px 0;
+}
+
+.private_policy_block input{
+  position: relative;
+  left: 45px;
+}
+
+.private_policy_block a{
+  position: relative;
+  left: 48px;
+  color: #333333;
+}
+
+.popup_signup_btn button{
+  width: 250px;
+  height: 50px;  
+  background-color: #333333;
+  color: #fff;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: .6px;
+  cursor: pointer;
 }

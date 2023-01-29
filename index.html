@@ -34,11 +34,75 @@
                         <img src="img/main/map.svg" alt="map_icon" class="map_img">
                     </div>
                     <div class="header_btns">
-                        <button class="login">Вход</button>
-                        <button class="reg">Регистрация</button>
+                        <button class="login open-signin-popup">Вход</button>
+                        <button class="reg open-signup-popup">Регистрация</button>
                     </div>
                 </div>
             </div>
+
+            <div class="popup__bg"> 
+                <div class="popup">  
+                    <div class="img_wrapper">                         
+                    <img src="img/main/close_popup.svg" class="close-signin-popup">
+                    </div>    
+
+                    <div class="popup_header_wrapper">
+                            <img src="img/main/blue_block.svg" class="main_block_img" style="width: 60px; height: 25px">
+                        <span class="main_header_text" style="font-family: 'Inter';font-style:normal;font-weight: 400;font-size: 40px;line-height: 48px;">Вход</span>
+                    </div>
+
+                    <form class="popup-form">
+                        <input class="popup-email" type="email" placeholder="Почта">
+                        <input class="popup-pass" type="password" placeholder="Пароль">
+                        <button class="popup-signin-btn">Войти</button>
+                    </form>                   
+                </div>
+            </div>  
+
+            <div class="popup_signup_bg"> 
+                <div class="popup_signup">  
+                    <div class="img_wrapper">                         
+                    <img src="img/main/close_popup.svg" class="close-signup-popup">
+                    </div>    
+
+                    <div class="popup_header_wrapper">
+                        <img src="img/main/blue_block.svg" class="main_block_img" style="width: 100px; height: 50px">
+                        <span class="main_header_text" style="font-family: 'Inter';font-style: normal;font-weight: 400;font-size: 40px;line-height: 48px;">Регистрация</span>
+                    </div>
+
+                    <form class="popup-signup-form">
+                       <div class="name_block">
+                            <ul class="name_list">
+                                <li class="name_list_elem"> <input type="text" placeholder="Фамилия"> </li>
+                                <li class="name_list_elem"> <input type="text" placeholder="Имя"></li>
+                                <li class="name_list_elem"> <input type="text" placeholder="Отчество"></li>
+                            </ul>
+                       </div>
+                       <div class="contact_block">
+                            <ul class="contact_list">
+                                <li class="contact_list_elem"> <input type="tel" placeholder="Телефон"> </li>
+                                <li class="contact_list_elem"> <input type="email" placeholder="E-mail"></li>
+                            </ul>
+                       </div>
+                       <div class="pass_block">
+                            <ul class="pass_list">
+                                <li class="pass_list_elem"> <input type="password" placeholder="Введите пароль"> </li>
+                                <li class="pass_list_elem"> <input type="password" placeholder="Повтор пароля"></li>
+                            </ul>
+                       </div>
+                       <div class="private_policy_block">
+                            <input type="checkbox">
+                            <a href="#" target="_blank">Политика конфиденциальности</a>
+                       </div>
+                       <div class="popup_signup_btn">
+                            <button type="submit">Зарегистрироваться</button>
+                       </div>
+                    </form>                   
+                </div>
+            </div>  
+
+            
+
         </section>
     </header>
 
@@ -190,5 +254,7 @@
     <!-- slider -->
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <!-- popups -->
+    <script src="js/popup.js"></script>
 </body>
 </html>
